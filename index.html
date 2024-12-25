@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمال الدهانات والديكورات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Readex Pro', sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+            text-align: center;
+            overflow-x: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+        .hero {
+            padding: 0;
+            position: relative;
+            background: url('https://antonovich-design.ae/uploads/page/2024/1/antonovich-design-thumb2024ooD5clvTpZii.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+        .hero-text {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .hero-text h1 {
+            margin: 0;
+        }
+        .hero-text a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .hero-text a:hover {
+            background-color: #fff;
+            color: #333;
+        }
+        section {
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+        .section-header {
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .section-header i {
+            position: absolute;
+            left: calc(50% - 20px);
+            top: -50px;
+            font-size: 40px;
+            color: #444;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: nowrap; /* منع الانتقال إلى صفوف جديدة */
+            gap: 10px;
+            overflow-x: auto; /* تفعيل التمرير الأفقي */
+            scroll-snap-type: x mandatory; /* تفعيل Scroll Snap */
+            padding-bottom: 10px;
+        }
+        .gallery .slide {
+            flex: 0 0 auto; /* جعل كل عنصر يأخذ حجمًا ثابتًا */
+            width: calc(80% - 20px); /* عرض عنصر واحد فقط على الشاشات الصغيرة */
+            scroll-snap-align: center; /* وضع الصور في مركز الشاشة أثناء التمرير */
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border: 1px solid #ccc;
+        }
+        .gallery .slide h3 {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        .gallery::-webkit-scrollbar {
+            height: 8px; /* تخصيص ارتفاع شريط التمرير */
+        }
+        .gallery::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 4px;
+        }
+        .gallery::-webkit-scrollbar-track {
+            background-color: #f1f1f1;
+        }
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .contact-info a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10px;
+            width: 200px;
+        }
+        .contact-info a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .contact-info a i {
+            margin-left: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        @media (min-width: 768px) {
+            .gallery .slide {
+                width: calc(33.33% - 20px); /* عرض ثلاثة عناصر على الشاشات المتوسطة */
+            }
+        }
+        @media (min-width: 1200px) {
+            .gallery .slide {
+                width: calc(25% - 20px); /* عرض أربعة عناصر على الشاشات الكبيرة */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#portfolio">أعمالنا السابقة</a>
+        <a href="#services">خدماتنا</a>
+        <a href="#about">من نحن</a>
+        <a href="#contact">تواصل معنا</a>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>مرحبًا بكم في عالم الدهانات والديكورات</h1>
+            <a href="tel:+966500021627"><i class="fas fa-phone"></i> اتصل بنا: +966500021627</a>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-header"><i class="fas fa-paint-roller"></i> أعمالنا السابقة</h2>
+        <div class="gallery">
+            <div class="slide">
+                <img src="https://seyaq.news/wp-content/uploads/2024/06/hmimda_59726_Marble_alternative_TV_decor_0f88b06c-2e98-4653-877c-46cfdc8b41d4.webp" alt="بديل الرخام">
+                <h3>بديل الرخام</h3>
+            </div>
+            <div class="slide">
+                <img src="https://seyaq.news/wp-content/uploads/2024/06/hmimda_59726_Marble_alternative_TV_decor_0f88b06c-2e98-4653-877c-46cfdc8b41d4.webp" alt="دهانات داخلية">
+                <h3>دهانات داخلية</h3>
+            </div>
+            <div class="slide">
+                <img src="https://seyaq.news/wp-content/uploads/2024/06/hmimda_59726_Marble_alternative_TV_decor_0f88b06c-2e98-4653-877c-46cfdc8b41d4.webp" alt="دهانات خارجية">
+                <h3>دهانات خارجية</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2 class="section-header"><i class="fas fa-paint-roller"></i> خدماتنا</h2>
+        <div class="gallery">
+            <div class="slide">
+                <img src="https://seyaq.news/wp-content/uploads/2024/06/hmimda_59726_Marble_alternative_TV_decor_0f88b06c-2e98-4653-877c-46cfdc8b41d4.webp" alt="تصاميم ثلاثية الأبعاد">
+                <h3>تصاميم ثلاثية الأبعاد</h3>
+            </div>
+            <div class="slide">
+                <img src="https://seyaq.news/wp-content/uploads/2024/06/hmimda_59726_Marble_alternative_TV_decor_0f88b06c-2e98-4653-877c-46cfdc8b41d4.webp" alt="ديكورات أسقف">
+                <h3>ديكورات أسقف</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-header"><i class="fas fa-info-circle"></i> من نحن</h2>
+        <p>نحن فريق متخصص في أعمال الدهانات والديكورات، نتميز بالاحترافية والدقة في التنفيذ.</p>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-header"><i class="fas fa-envelope"></i> تواصل معنا</h2>
+        <div class="contact-info">
+            <p>المملكة العربية السعودية، جدة</p>
+            <a href="mailto:example@example.com"><i class="fas fa-envelope"></i> example@example.com</a>
+            <a href="https://wa.me/966500021627" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> تواصل عبر الواتساب</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 أعمال الدهانات والديكورات. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
